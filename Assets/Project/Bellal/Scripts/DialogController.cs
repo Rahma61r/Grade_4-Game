@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Fungus;
 
 public class DialogController : MonoBehaviour
 {
-    [SerializeField] GameObject KeyObj;
     [SerializeField] Flowchart flowchart;
     [SerializeField] string blockname;
-    bool cantertook = false;
+    public bool cantertook = false;
     private void Update()
     {
         ex();
@@ -19,6 +17,7 @@ public class DialogController : MonoBehaviour
         if (cantertook && Input.GetKeyDown(KeyCode.E))
         {
             flowchart.ExecuteBlock(blockname);
+
         }
     }
 
@@ -27,7 +26,6 @@ public class DialogController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             cantertook = true;
-            KeyObj.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
@@ -35,7 +33,8 @@ public class DialogController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             cantertook = false;
-            KeyObj.SetActive(false);
         }
+
     }
+
 }
