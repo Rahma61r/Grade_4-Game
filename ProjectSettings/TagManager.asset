@@ -10,6 +10,7 @@ TagManager:
   - Coins
   - Car
   - Zombie
+  - Pistol
   layers:
   - Default
   - TransparentFX
