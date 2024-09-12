@@ -5,16 +5,20 @@ using UnityEngine;
 
 public class collectcoins : MonoBehaviour
 {
-    private int Coin = 0; // تصحيح اسم المتغير
+    private int Coin = 0;
     public TextMeshProUGUI CoinText;
+
+    private void Start()
+    {
+        // تعيين النص الافتراضي عند بدء اللعبة
+        CoinText.text = "Coins: " + Coin.ToString();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Coin") // تصحيح التحقق من العلامة
+        if (other.CompareTag("Coin")) // التحقق من العلامة باستخدام CompareTag
         {
-            Coin++;
-            Debug.Log(Coin);
-            CoinText.text = Coin.ToString(); // تحديث النص في واجهة المستخدم
+            CoinText.text = "Coins: " + Coin.ToString();
             Destroy(other.gameObject);
         }
     }
