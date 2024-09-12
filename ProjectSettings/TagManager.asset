@@ -11,6 +11,8 @@ TagManager:
   - Car
   - Zombie
   - Pistol
+  - Coin
+  - Cion
   layers:
   - Default
   - TransparentFX
