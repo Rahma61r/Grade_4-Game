@@ -6,6 +6,10 @@ TagManager:
   tags:
   - CinemachineTarget
   - Find
+  - dog
+  - Coins
+  - Car
+  - Zombie
   layers:
   - Default
   - TransparentFX
