@@ -7,7 +7,7 @@ public class mainmenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Saad"); 
+        SceneManager.LoadScene("saad"); 
     }
     public void ExitGame()
     {
