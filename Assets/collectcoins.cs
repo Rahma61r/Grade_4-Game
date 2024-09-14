@@ -11,15 +11,16 @@ public class collectcoins : MonoBehaviour
     private void Start()
     {
         // تعيين النص الافتراضي عند بدء اللعبة
-        CoinText.text = "Coins: " + Coin.ToString();
+        CoinText.text = ": " + Coin.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coin")) // التحقق من العلامة باستخدام CompareTag
         {
-            CoinText.text = "Coins: " + Coin.ToString();
-            Destroy(other.gameObject);
+            Coin++; // زيادة عدد العملات
+            CoinText.text = ": " + Coin.ToString(); // تحديث النص بعد زيادة العملات
+            Destroy(other.gameObject); // تدمير كائن العملة
         }
     }
 }
