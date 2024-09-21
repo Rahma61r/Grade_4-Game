@@ -283,6 +283,7 @@ namespace StarterAssets
         {
             if (Grounded)
             {
+                
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
 
@@ -304,7 +305,7 @@ namespace StarterAssets
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
-
+                    Debug.Log(_verticalVelocity);
                     // update animator if using character
                     if (_hasAnimator)
                     {

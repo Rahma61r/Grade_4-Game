@@ -13,14 +13,15 @@ TagManager:
   - Pistol
   - Coin
   - Cion
+  - Enemys
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - People
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
