@@ -14,6 +14,7 @@ TagManager:
   - Coin
   - Cion
   - Enemys
+  - C
   layers:
   - Default
   - TransparentFX
