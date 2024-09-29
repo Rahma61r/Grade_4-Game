@@ -25,5 +25,22 @@ public class Dora : MonoBehaviour
         {
             myFlowchart.ExecuteBlock("Dora");
         }
+        if (x.gameObject.tag == "Secovdpound")
+        {
+            myFlowchart.ExecuteBlock("takeBluebootel");
+        }
+        if (x.gameObject.tag == "second")
+        {
+            myFlowchart.ExecuteBlock("takesecond");
+        }
+        if (x.gameObject.tag == "third")
+        {
+            myFlowchart.ExecuteBlock("takethird");
+        }
+        if (x.gameObject.tag == "fourth")
+        {
+            myFlowchart.ExecuteBlock("takefourth");
+        }
     }
+
 }
