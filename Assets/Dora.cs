@@ -27,20 +27,24 @@ public class Dora : MonoBehaviour
         }
         if (x.gameObject.tag == "Secovdpound")
         {
+            myFlowchart.SetBooleanVariable("coin1", true);
             myFlowchart.ExecuteBlock("takeBluebootel");
         }
         if (x.gameObject.tag == "second")
         {
+            myFlowchart.SetBooleanVariable("coin2", true);
             myFlowchart.ExecuteBlock("takesecond");
         }
         if (x.gameObject.tag == "third")
         {
+            myFlowchart.SetBooleanVariable("coin3", true);
             myFlowchart.ExecuteBlock("takethird");
         }
-        if (x.gameObject.tag == "fourth")
+       /* if (x.gameObject.tag == "fourth")
         {
+           
             myFlowchart.ExecuteBlock("takefourth");
-        }
+        }*/
     }
 
 }
